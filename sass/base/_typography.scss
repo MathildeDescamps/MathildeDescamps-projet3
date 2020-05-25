@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'TYPO-COMICS-Light-DEMO';
+    src: url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.eot') format('eot'), url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.woff') format('woff'), url('../../public/fonts/webfonts_TYPO-COMICS-Light-DEMO/TYPO-COMICS-Light-DEMO.ttf.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer,
+.content h1,
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu1 {
+    font-family: 'TYPO-COMICS-Light-DEMO', 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+    &__header h2 {
+        font-family: 'Brush Script MT', Georgia, 'Times New Roman', Times, serif;
+    }
+    &__footer {
+        font-family: 'Brush Script MT', Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.menu2 {
+    font-family: Didot;
+    &__header h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    & .bloc__header h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.menu3 {
+    font-family: 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+    &__header h2 {
+        font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+    }
+}
+
+.menu4 {
+    font-family: 'Bradley Hand', Didot, Georgia, 'Times New Roman', Times, serif;
+    &__header h2 {
+        font-family: 'Kaushan Script', Georgia, 'Times New Roman', Times, serif;
+    }
+}

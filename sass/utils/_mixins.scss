@@ -1,0 +1,86 @@
+            @mixin centered {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            @mixin box-shadow {
+                box-shadow: 0px 0px 10px 1px $shadow;
+            }
+            
+            @mixin all-menus {
+                @include centered;
+                margin-top: 15px;
+                margin-bottom: 150px;
+                padding-top: 40px;
+                @include box-shadow;
+                width: 70%;
+            }
+            
+            @mixin all-menus-responsive {
+                @include centered;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                padding-top: 40px;
+                @include box-shadow;
+                width: 80%;
+                &__header h2 {
+                    margin-bottom: -20px;
+                    margin-top: 0;
+                }
+            }
+            
+            @mixin before-after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                border-bottom: 2px solid;
+                margin: 0 20px;
+            }
+            
+            @mixin all-blocs {
+                @include centered;
+                margin-bottom: 60px;
+                width: 80%;
+                & .bloc__content {
+                    &--dp {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &--d {
+                        text-align: left;
+                    }
+                    &--p {
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            @mixin all-blocs-responsive {
+                @include centered;
+                width: 80%;
+                margin-bottom: 10px;
+                & .bloc__content {
+                    &--dp {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &--d {
+                        text-align: left;
+                        margin-right: 10px;
+                    }
+                    &--p {
+                        text-align: right;
+                        font-weight: bold;
+                        position: relative;
+                        top: 15px;
+                    }
+                }
+                & .bloc__header {
+                    & .lines {
+                        top: 35px;
+                        height: 2px;
+                        width: 50%;
+                    }
+                }
+            }
